@@ -1,0 +1,9 @@
+.bg1{
+    background: linear-gradient(120deg, red, blue);
+}
+.bg2{
+    background: linear-gradient(120deg, blue ,red);
+}
+#hero {
+    height: calc(100vh - 90px);
+}

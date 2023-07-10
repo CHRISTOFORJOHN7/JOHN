@@ -1,0 +1,33 @@
+<div class="co">
+    <div class="container">
+        <div class="row vh-100 align-items-center justify-content-center btn-dark">
+            <div class="col-md-4">
+    
+                <div class="card ">
+                    <h1 class="text-center pt-4"> Login</h1>
+                    <div class="card-body">
+                        <form #logindata="ngForm" (ngSubmit)="login(logindata)">
+                            <div class="mb-4">
+                                <label class="form-label" >Username</label>
+                                <input class="form-control" ngModel #username="ngModel" name="username" type="email" placeholder="Name"  required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label">Password</label>
+                                <input class="form-control" ngModel #password="ngModel" type="password" name="password"  placeholder="Password" required >
+                            </div>
+                            <div class="text-center">
+                                <button  type="submit" class="btn btn-danger rounded">Login</button>
+                            </div>
+    
+                        </form>
+                        <div>
+                            <a [routerLink]="'/registation'"> Create a new account</a>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="co">
+    <div class="container">
+        <div class="row p-5 align-items-center justify-content-center btn-dark">
+            <div class="col-md-4">
+    
+                <div class="card">
+                    <h3 class="text-center pt-4"> Registation</h3>
+                    <div class="card-body">
+                        <form #regdata="ngForm" (ngSubmit)="reg(regdata)">
+                            <div class="mb-3">
+                                <label class="form-label" >User name</label>
+                                <input class="form-control" ngModel #firstname="ngModel" name="username" type="email" placeholder="Your Name"  required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" >Mobile No</label>
+                                <input class="form-control" ngModel #mobno="ngModel" name="mobno" type="number" placeholder="Your Mobile No"  required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" >DOB</label>
+                                <input class="form-control" ngModel #dob="ngModel" name="dob" type="date" placeholder="Date-Month-Year"  required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" >E-mail</label>
+                                <input class="form-control" ngModel #username="ngModel" name="username" type="email" placeholder="E-mail"  required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Create Password</label>
+                                <input class="form-control" ngModel #password1="ngModel" type="password" name="password1"  placeholder="Password" required >
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Confirm Password</label>
+                                <input class="form-control" ngModel #password2="ngModel" type="password" name="password2"  placeholder="Password" required >
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-danger rounded">Submit <i class="fa-solid fa-file-check fa-beat"></i></button>
+                            </div>
+    
+                        </form>
+                    </div>
+                    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>
